@@ -1,0 +1,344 @@
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for an ANSI C-conforming const... yes
+checking whether gcc supports -g... yes
+checking whether gcc supports -O2... yes
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking gcc dependency flag... -MM
+checking whether gcc supports -Werror... yes
+checking whether gcc supports -Wall... yes
+checking whether gcc supports -std=c99... yes
+checking whether gcc supports -xc99... no
+checking for getopt.h... yes
+checking for time.h... yes
+checking whether we need -std=c99 -D__EXTENSIONS__ -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -D_XOPEN_SOURCE_EXTENDED=1 -D_ALL_SOURCE as a flag for gcc... failed
+checking whether we need -std=c99 -D__EXTENSIONS__ -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -D_ALL_SOURCE as a flag for gcc... failed
+checking whether we need -std=c99 as a flag for gcc... no
+checking whether we need -D_BSD_SOURCE -D_DEFAULT_SOURCE as a flag for gcc... no
+checking whether we need -D_GNU_SOURCE as a flag for gcc... yes
+checking whether we need -D_GNU_SOURCE -D_FRSRESGID as a flag for gcc... no
+checking whether we need -D_POSIX_C_SOURCE=200112 as a flag for gcc... no
+checking whether we need -D__EXTENSIONS__ as a flag for gcc... failed
+checking if gcc supports -flto... yes
+checking for inline... inline
+checking whether the C compiler (gcc) accepts the "format" attribute... yes
+checking whether the C compiler (gcc) accepts the "unused" attribute... yes
+checking whether the C compiler (gcc) accepts the "weak" attribute... yes
+checking whether the C compiler (gcc) accepts the "noreturn" attribute... yes
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for yylex_destroy... yes
+checking for lex %option... yes
+checking for bison... no
+checking for byacc... no
+checking for doxygen... no
+checking for strip... strip
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for ar... /usr/bin/ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... (cached) strip
+checking for ranlib... ranlib
+checking for gawk... no
+checking for mawk... mawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for stdarg.h... yes
+checking for stdbool.h... yes
+checking for netinet/in.h... yes
+checking for netinet/tcp.h... yes
+checking for sys/param.h... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for sys/un.h... yes
+checking for sys/uio.h... yes
+checking for sys/resource.h... yes
+checking for arpa/inet.h... yes
+checking for syslog.h... yes
+checking for netdb.h... yes
+checking for sys/wait.h... yes
+checking for pwd.h... yes
+checking for glob.h... yes
+checking for grp.h... yes
+checking for login_cap.h... no
+checking for winsock2.h... no
+checking for ws2tcpip.h... no
+checking for endian.h... yes
+checking for sys/endian.h... no
+checking for libkern/OSByteOrder.h... no
+checking for sys/ipc.h... yes
+checking for sys/shm.h... yes
+checking for ifaddrs.h... yes
+checking for poll.h... yes
+checking for net/if.h... yes
+checking for TargetConditionals.h... no
+checking for netioapi.h... no
+checking for linux/net_tstamp.h... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking how to run the C preprocessor... gcc -E
+checking for uid_t in sys/types.h... yes
+checking for pid_t... yes
+checking for off_t... yes
+checking for u_char... yes
+checking for rlim_t... yes
+checking for socklen_t... yes
+checking for in_addr_t... yes
+checking for in_port_t... yes
+checking if memcmp compares unsigned... yes
+checking size of time_t... 8
+checking size of size_t... 8
+checking for library containing inet_pton... none required
+checking for library containing socket... none required
+checking for working chown... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether we need -D_LARGEFILE_SOURCE=1 as a flag for gcc... no
+checking if nonblocking sockets work... yes
+checking whether mkdir has one arg... no
+checking for strptime... yes
+checking whether strptime works... yes
+checking for GNU libc compatible malloc... yes
+checking whether gcc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for pthread_spinlock_t... yes
+checking for pthread_rwlock_t... yes
+checking size of unsigned long... 8
+checking size of pthread_t... 8
+checking if -pthread unused during linking... no
+checking for SSL... found in /root/local-eng25519
+checking for EVP_sha256 in -lcrypto... yes
+checking for openssl/ssl.h... yes
+checking for openssl/err.h... yes
+checking for openssl/rand.h... yes
+checking if libssl needs libdl... no
+checking if libssl needs -lcrypt32... no
+checking for LibreSSL... no
+checking for openssl/conf.h... yes
+checking for openssl/engine.h... yes
+checking for openssl/bn.h... yes
+checking for openssl/dh.h... yes
+checking for openssl/dsa.h... yes
+checking for openssl/rsa.h... yes
+checking for openssl/core_names.h... yes
+checking for openssl/param_build.h... no
+checking for OPENSSL_config... yes
+checking for EVP_sha1... yes
+checking for EVP_sha256... yes
+checking for EVP_sha512... yes
+checking for FIPS_mode... yes
+checking for EVP_default_properties_is_fips_enabled... no
+checking for EVP_MD_CTX_new... yes
+checking for OpenSSL_add_all_digests... no
+checking for OPENSSL_init_crypto... yes
+checking for EVP_cleanup... no
+checking for ENGINE_cleanup... no
+checking for ERR_load_crypto_strings... no
+checking for CRYPTO_cleanup_all_ex_data... no
+checking for ERR_free_strings... no
+checking for RAND_cleanup... no
+checking for DSA_SIG_set0... yes
+checking for EVP_dss1... no
+checking for EVP_DigestVerify... yes
+checking for EVP_aes_256_cbc... yes
+checking for EVP_EncryptInit_ex... yes
+checking for HMAC_Init_ex... yes
+checking for CRYPTO_THREADID_set_callback... no
+checking for EVP_MAC_CTX_set_params... no
+checking for OSSL_PARAM_BLD_new... no
+checking for BIO_set_callback_ex... yes
+checking for OPENSSL_init_ssl... yes
+checking for SSL_CTX_set_security_level... yes
+checking for SSL_set1_host... yes
+checking for SSL_get0_peername... yes
+checking for X509_VERIFY_PARAM_set1_host... yes
+checking for SSL_CTX_set_ciphersuites... yes
+checking for SSL_CTX_set_tlsext_ticket_key_evp_cb... no
+checking for SSL_CTX_set_alpn_select_cb... yes
+checking for SSL_get0_alpn_selected... yes
+checking for SSL_CTX_set_alpn_protos... yes
+checking for SSL_get1_peer_certificate... no
+checking whether SSL_COMP_get_compression_methods is declared... yes
+checking whether sk_SSL_COMP_pop_free is declared... yes
+checking whether SSL_CTX_set_ecdh_auto is declared... yes
+checking the return type of HMAC_Init_ex... int
+checking for EVP_PKEY_set_type_str... yes
+checking for EC_KEY_new... yes
+checking if GOST works... no
+checking for ECDSA_sign... yes
+checking for SHA384_Init... yes
+checking whether NID_X9_62_prime256v1 is declared... yes
+checking whether NID_secp384r1 is declared... yes
+checking if openssl supports SHA2 and ECDSA with EVP... yes
+checking whether NID_ED25519 is declared... yes
+checking whether NID_ED448 is declared... yes
+checking for libexpat... found in /usr
+checking for expat.h... yes
+checking whether XML_StopParser is declared... yes
+checking for getaddrinfo... yes
+checking for ioctlsocket... no
+checking for daemon... yes
+checking if daemon is deprecated... no
+checking for struct sockaddr_un.sun_len... no
+checking for struct in_pktinfo.ipi_spec_dst... yes
+checking for htobe64... yes
+checking for be64toh... yes
+checking for library containing setusercontext... no
+checking for tzset... yes
+checking for sigprocmask... yes
+checking for fcntl... yes
+checking for getpwnam... yes
+checking for endpwent... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for setsid... yes
+checking for chroot... yes
+checking for kill... yes
+checking for chown... yes
+checking for sleep... yes
+checking for usleep... yes
+checking for random... yes
+checking for srandom... yes
+checking for recvmsg... yes
+checking for sendmsg... yes
+checking for writev... yes
+checking for socketpair... yes
+checking for glob... yes
+checking for initgroups... yes
+checking for strftime... yes
+checking for localtime_r... yes
+checking for setusercontext... no
+checking for _beginthreadex... no
+checking for endservent... yes
+checking for endprotoent... yes
+checking for fsync... yes
+checking for shmget... yes
+checking for accept4... yes
+checking for getifaddrs... yes
+checking for if_nametoindex... yes
+checking for poll... yes
+checking for gettid... yes
+checking for setresuid... yes
+checking for setresgid... yes
+checking whether inet_pton is declared... yes
+checking whether inet_ntop is declared... yes
+checking for inet_aton... yes
+checking for inet_pton... yes
+checking for inet_ntop... yes
+checking for snprintf... yes
+checking for correct snprintf return value... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking for memmove... yes
+checking for gmtime_r... yes
+checking for isblank... yes
+checking for explicit_bzero... yes
+checking for reallocarray... yes
+checking whether reallocarray is declared... yes
+checking for arc4random... no
+checking for arc4random_uniform... no
+checking for getentropy... yes
+checking for ctime_r... yes
+checking for strsep... yes
+checking if make supports $< with implicit rule in scope... yes
+configure: Stripping extension flags...
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/example.conf
+config.status: creating doc/libunbound.3
+config.status: creating doc/unbound.8
+config.status: creating doc/unbound-anchor.8
+config.status: creating doc/unbound-checkconf.8
+config.status: creating doc/unbound.conf.5
+config.status: creating doc/unbound-control.8
+config.status: creating doc/unbound-host.1
+config.status: creating smallapp/unbound-control-setup.sh
+config.status: creating dnstap/dnstap_config.h
+config.status: creating dnscrypt/dnscrypt_config.h
+config.status: creating contrib/libunbound.pc
+config.status: creating contrib/unbound.socket
+config.status: creating contrib/unbound.service
+config.status: creating contrib/unbound_portable.service
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing libtool commands

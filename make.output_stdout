@@ -1,0 +1,251 @@
+yacc -d -o util/configparser.c ./util/configparser.y
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o config_file.lo -c util/config_file.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/config_file.c  -fPIC -DPIC -o .libs/config_file.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/config_file.c -o config_file.o >/dev/null 2>&1
+if test "flex" != ":"; then \
+	echo "#include \"config.h\"" > util/configlexer.c ;\
+	echo "#include \"util/configyyrename.h\"" >> util/configlexer.c ;\
+	flex -t ./util/configlexer.lex >> util/configlexer.c ;\
+fi
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o configlexer.lo -c util/configlexer.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/configlexer.c  -fPIC -DPIC -o .libs/configlexer.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/configlexer.c -o configlexer.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o configparser.lo -c util/configparser.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/configparser.c  -fPIC -DPIC -o .libs/configparser.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/configparser.c -o configparser.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o fptr_wlist.lo -c util/fptr_wlist.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/fptr_wlist.c  -fPIC -DPIC -o .libs/fptr_wlist.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/fptr_wlist.c -o fptr_wlist.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o siphash.lo -c util/siphash.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/siphash.c  -fPIC -DPIC -o .libs/siphash.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/siphash.c -o siphash.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o edns.lo -c util/edns.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/edns.c  -fPIC -DPIC -o .libs/edns.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/edns.c -o edns.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o locks.lo -c util/locks.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/locks.c  -fPIC -DPIC -o .libs/locks.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/locks.c -o locks.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o log.lo -c util/log.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/log.c  -fPIC -DPIC -o .libs/log.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/log.c -o log.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o mini_event.lo -c util/mini_event.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/mini_event.c  -fPIC -DPIC -o .libs/mini_event.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/mini_event.c -o mini_event.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o module.lo -c util/module.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/module.c  -fPIC -DPIC -o .libs/module.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/module.c -o module.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o net_help.lo -c util/net_help.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/net_help.c  -fPIC -DPIC -o .libs/net_help.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/net_help.c -o net_help.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o random.lo -c util/random.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/random.c  -fPIC -DPIC -o .libs/random.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/random.c -o random.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o rbtree.lo -c util/rbtree.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/rbtree.c  -fPIC -DPIC -o .libs/rbtree.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/rbtree.c -o rbtree.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o regional.lo -c util/regional.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/regional.c  -fPIC -DPIC -o .libs/regional.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/regional.c -o regional.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o rtt.lo -c util/rtt.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/rtt.c  -fPIC -DPIC -o .libs/rtt.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/rtt.c -o rtt.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o dnstree.lo -c util/storage/dnstree.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/dnstree.c  -fPIC -DPIC -o .libs/dnstree.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/dnstree.c -o dnstree.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o lookup3.lo -c util/storage/lookup3.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/lookup3.c  -fPIC -DPIC -o .libs/lookup3.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/lookup3.c -o lookup3.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o lruhash.lo -c util/storage/lruhash.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/lruhash.c  -fPIC -DPIC -o .libs/lruhash.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/lruhash.c -o lruhash.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o slabhash.lo -c util/storage/slabhash.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/slabhash.c  -fPIC -DPIC -o .libs/slabhash.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/storage/slabhash.c -o slabhash.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o tcp_conn_limit.lo -c util/tcp_conn_limit.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/tcp_conn_limit.c  -fPIC -DPIC -o .libs/tcp_conn_limit.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/tcp_conn_limit.c -o tcp_conn_limit.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o timehist.lo -c util/timehist.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/timehist.c  -fPIC -DPIC -o .libs/timehist.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/timehist.c -o timehist.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o tube.lo -c util/tube.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/tube.c  -fPIC -DPIC -o .libs/tube.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/tube.c -o tube.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o winsock_event.lo -c util/winsock_event.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/winsock_event.c  -fPIC -DPIC -o .libs/winsock_event.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/winsock_event.c -o winsock_event.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o autotrust.lo -c validator/autotrust.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/autotrust.c  -fPIC -DPIC -o .libs/autotrust.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/autotrust.c -o autotrust.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_anchor.lo -c validator/val_anchor.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_anchor.c  -fPIC -DPIC -o .libs/val_anchor.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_anchor.c -o val_anchor.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o rpz.lo -c services/rpz.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/rpz.c  -fPIC -DPIC -o .libs/rpz.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/rpz.c -o rpz.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o rfc_1982.lo -c util/rfc_1982.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/rfc_1982.c  -fPIC -DPIC -o .libs/rfc_1982.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/rfc_1982.c -o rfc_1982.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o proxy_protocol.lo -c util/proxy_protocol.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/proxy_protocol.c  -fPIC -DPIC -o .libs/proxy_protocol.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/proxy_protocol.c -o proxy_protocol.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o validator.lo -c validator/validator.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/validator.c  -fPIC -DPIC -o .libs/validator.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/validator.c -o validator.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_kcache.lo -c validator/val_kcache.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_kcache.c  -fPIC -DPIC -o .libs/val_kcache.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_kcache.c -o val_kcache.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_kentry.lo -c validator/val_kentry.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_kentry.c  -fPIC -DPIC -o .libs/val_kentry.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_kentry.c -o val_kentry.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_neg.lo -c validator/val_neg.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_neg.c  -fPIC -DPIC -o .libs/val_neg.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_neg.c -o val_neg.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_nsec3.lo -c validator/val_nsec3.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_nsec3.c  -fPIC -DPIC -o .libs/val_nsec3.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_nsec3.c -o val_nsec3.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_nsec.lo -c validator/val_nsec.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_nsec.c  -fPIC -DPIC -o .libs/val_nsec.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_nsec.c -o val_nsec.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_secalgo.lo -c validator/val_secalgo.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_secalgo.c  -fPIC -DPIC -o .libs/val_secalgo.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_secalgo.c -o val_secalgo.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_sigcrypt.lo -c validator/val_sigcrypt.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_sigcrypt.c  -fPIC -DPIC -o .libs/val_sigcrypt.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_sigcrypt.c -o val_sigcrypt.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o val_utils.lo -c validator/val_utils.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_utils.c  -fPIC -DPIC -o .libs/val_utils.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c validator/val_utils.c -o val_utils.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o dns64.lo -c dns64/dns64.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c dns64/dns64.c  -fPIC -DPIC -o .libs/dns64.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c dns64/dns64.c -o dns64.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o authzone.lo -c services/authzone.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/authzone.c  -fPIC -DPIC -o .libs/authzone.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/authzone.c -o authzone.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o respip.lo -c respip/respip.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c respip/respip.c  -fPIC -DPIC -o .libs/respip.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c respip/respip.c -o respip.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o timeval_func.lo -c util/timeval_func.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/timeval_func.c  -fPIC -DPIC -o .libs/timeval_func.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/timeval_func.c -o timeval_func.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o netevent.lo -c util/netevent.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/netevent.c  -fPIC -DPIC -o .libs/netevent.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/netevent.c -o netevent.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o listen_dnsport.lo -c services/listen_dnsport.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/listen_dnsport.c  -fPIC -DPIC -o .libs/listen_dnsport.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/listen_dnsport.c -o listen_dnsport.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o outside_network.lo -c services/outside_network.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/outside_network.c  -fPIC -DPIC -o .libs/outside_network.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c services/outside_network.c -o outside_network.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o ub_event.lo -c util/ub_event.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/ub_event.c  -fPIC -DPIC -o .libs/ub_event.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/ub_event.c -o ub_event.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o acl_list.lo -c daemon/acl_list.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/acl_list.c  -fPIC -DPIC -o .libs/acl_list.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/acl_list.c -o acl_list.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o cachedump.lo -c daemon/cachedump.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/cachedump.c  -fPIC -DPIC -o .libs/cachedump.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/cachedump.c -o cachedump.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o daemon.lo -c daemon/daemon.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/daemon.c  -fPIC -DPIC -o .libs/daemon.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/daemon.c -o daemon.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o shm_main.lo -c util/shm_side/shm_main.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/shm_side/shm_main.c  -fPIC -DPIC -o .libs/shm_main.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/shm_side/shm_main.c -o shm_main.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o remote.lo -c daemon/remote.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/remote.c  -fPIC -DPIC -o .libs/remote.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/remote.c -o remote.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o stats.lo -c daemon/stats.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/stats.c  -fPIC -DPIC -o .libs/stats.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/stats.c -o stats.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o unbound.lo -c daemon/unbound.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/unbound.c  -fPIC -DPIC -o .libs/unbound.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/unbound.c -o unbound.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o worker.lo -c daemon/worker.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/worker.c  -fPIC -DPIC -o .libs/worker.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c daemon/worker.c -o worker.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o keyraw.lo -c sldns/keyraw.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/keyraw.c  -fPIC -DPIC -o .libs/keyraw.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/keyraw.c -o keyraw.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o sbuffer.lo -c sldns/sbuffer.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/sbuffer.c  -fPIC -DPIC -o .libs/sbuffer.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/sbuffer.c -o sbuffer.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o wire2str.lo -c sldns/wire2str.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/wire2str.c  -fPIC -DPIC -o .libs/wire2str.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/wire2str.c -o wire2str.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o parse.lo -c sldns/parse.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/parse.c  -fPIC -DPIC -o .libs/parse.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/parse.c -o parse.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o parseutil.lo -c sldns/parseutil.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/parseutil.c  -fPIC -DPIC -o .libs/parseutil.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/parseutil.c -o parseutil.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o rrdef.lo -c sldns/rrdef.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/rrdef.c  -fPIC -DPIC -o .libs/rrdef.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/rrdef.c -o rrdef.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o str2wire.lo -c sldns/str2wire.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/str2wire.c  -fPIC -DPIC -o .libs/str2wire.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c sldns/str2wire.c -o str2wire.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o strlcat.lo -c compat/strlcat.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/strlcat.c  -fPIC -DPIC -o .libs/strlcat.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/strlcat.c -o strlcat.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o strlcpy.lo -c compat/strlcpy.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/strlcpy.c  -fPIC -DPIC -o .libs/strlcpy.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/strlcpy.c -o strlcpy.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o arc4random.lo -c compat/arc4random.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/arc4random.c  -fPIC -DPIC -o .libs/arc4random.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/arc4random.c -o arc4random.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o arc4random_uniform.lo -c compat/arc4random_uniform.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/arc4random_uniform.c  -fPIC -DPIC -o .libs/arc4random_uniform.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/arc4random_uniform.c -o arc4random_uniform.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o arc4_lock.lo -c compat/arc4_lock.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/arc4_lock.c  -fPIC -DPIC -o .libs/arc4_lock.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c compat/arc4_lock.c -o arc4_lock.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o context.lo -c libunbound/context.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c libunbound/context.c  -fPIC -DPIC -o .libs/context.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c libunbound/context.c -o context.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o libunbound.lo -c libunbound/libunbound.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c libunbound/libunbound.c  -fPIC -DPIC -o .libs/libunbound.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c libunbound/libunbound.c -o libunbound.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o libworker.lo -c libunbound/libworker.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c libunbound/libworker.c  -fPIC -DPIC -o .libs/libworker.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c libunbound/libworker.c -o libworker.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o ub_event_pluggable.lo -c util/ub_event_pluggable.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/ub_event_pluggable.c  -fPIC -DPIC -o .libs/ub_event_pluggable.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c util/ub_event_pluggable.c -o ub_event_pluggable.o >/dev/null 2>&1
+./libtool --tag=CC --mode=link gcc -R/root/local-eng25519/lib -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -L/root/local-eng25519/lib -version-info 9:27:1 -no-undefined -export-symbols ./libunbound/ubsyms.def -o libunbound.la context.lo libunbound.lo libworker.lo ub_event_pluggable.lo dns.lo infra.lo rrset.lo dname.lo msgencode.lo as112.lo msgparse.lo msgreply.lo packed_rrset.lo iterator.lo iter_delegpt.lo iter_donotq.lo iter_fwd.lo iter_hints.lo iter_priv.lo iter_resptype.lo iter_scrub.lo iter_utils.lo localzone.lo mesh.lo modstack.lo view.lo outbound_list.lo alloc.lo config_file.lo configlexer.lo configparser.lo fptr_wlist.lo siphash.lo edns.lo locks.lo log.lo mini_event.lo module.lo net_help.lo random.lo rbtree.lo regional.lo rtt.lo dnstree.lo lookup3.lo lruhash.lo slabhash.lo tcp_conn_limit.lo timehist.lo tube.lo winsock_event.lo autotrust.lo val_anchor.lo rpz.lo rfc_1982.lo proxy_protocol.lo validator.lo val_kcache.lo val_kentry.lo val_neg.lo val_nsec3.lo val_nsec.lo val_secalgo.lo val_sigcrypt.lo val_utils.lo dns64.lo  authzone.lo         respip.lo timeval_func.lo netevent.lo listen_dnsport.lo outside_network.lo keyraw.lo sbuffer.lo wire2str.lo parse.lo parseutil.lo rrdef.lo str2wire.lo strlcat.lo strlcpy.lo arc4random.lo arc4random_uniform.lo arc4_lock.lo -rpath /usr/local/lib -lssl -lpthread  -lcrypto
+libtool: link: echo "{ global:" > .libs/libunbound.ver
+libtool: link:  cat ./libunbound/ubsyms.def | sed -e "s/\(.*\)/\1;/" >> .libs/libunbound.ver
+libtool: link:  echo "local: *; };" >> .libs/libunbound.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  .libs/context.o .libs/libunbound.o .libs/libworker.o .libs/ub_event_pluggable.o .libs/dns.o .libs/infra.o .libs/rrset.o .libs/dname.o .libs/msgencode.o .libs/as112.o .libs/msgparse.o .libs/msgreply.o .libs/packed_rrset.o .libs/iterator.o .libs/iter_delegpt.o .libs/iter_donotq.o .libs/iter_fwd.o .libs/iter_hints.o .libs/iter_priv.o .libs/iter_resptype.o .libs/iter_scrub.o .libs/iter_utils.o .libs/localzone.o .libs/mesh.o .libs/modstack.o .libs/view.o .libs/outbound_list.o .libs/alloc.o .libs/config_file.o .libs/configlexer.o .libs/configparser.o .libs/fptr_wlist.o .libs/siphash.o .libs/edns.o .libs/locks.o .libs/log.o .libs/mini_event.o .libs/module.o .libs/net_help.o .libs/random.o .libs/rbtree.o .libs/regional.o .libs/rtt.o .libs/dnstree.o .libs/lookup3.o .libs/lruhash.o .libs/slabhash.o .libs/tcp_conn_limit.o .libs/timehist.o .libs/tube.o .libs/winsock_event.o .libs/autotrust.o .libs/val_anchor.o .libs/rpz.o .libs/rfc_1982.o .libs/proxy_protocol.o .libs/validator.o .libs/val_kcache.o .libs/val_kentry.o .libs/val_neg.o .libs/val_nsec3.o .libs/val_nsec.o .libs/val_secalgo.o .libs/val_sigcrypt.o .libs/val_utils.o .libs/dns64.o .libs/authzone.o .libs/respip.o .libs/timeval_func.o .libs/netevent.o .libs/listen_dnsport.o .libs/outside_network.o .libs/keyraw.o .libs/sbuffer.o .libs/wire2str.o .libs/parse.o .libs/parseutil.o .libs/rrdef.o .libs/str2wire.o .libs/strlcat.o .libs/strlcpy.o .libs/arc4random.o .libs/arc4random_uniform.o .libs/arc4_lock.o   -Wl,-rpath -Wl,/root/local-eng25519/lib -L/root/local-eng25519/lib -lssl -lpthread -lcrypto  -g -O2 -flto -pthread   -pthread -Wl,-soname -Wl,libunbound.so.8 -Wl,-version-script -Wl,.libs/libunbound.ver -o .libs/libunbound.so.8.1.27
+libtool: link: (cd ".libs" && rm -f "libunbound.so.8" && ln -s "libunbound.so.8.1.27" "libunbound.so.8")
+libtool: link: (cd ".libs" && rm -f "libunbound.so" && ln -s "libunbound.so.8.1.27" "libunbound.so")
+libtool: link: /usr/bin/ar cru .libs/libunbound.a  context.o libunbound.o libworker.o ub_event_pluggable.o dns.o infra.o rrset.o dname.o msgencode.o as112.o msgparse.o msgreply.o packed_rrset.o iterator.o iter_delegpt.o iter_donotq.o iter_fwd.o iter_hints.o iter_priv.o iter_resptype.o iter_scrub.o iter_utils.o localzone.o mesh.o modstack.o view.o outbound_list.o alloc.o config_file.o configlexer.o configparser.o fptr_wlist.o siphash.o edns.o locks.o log.o mini_event.o module.o net_help.o random.o rbtree.o regional.o rtt.o dnstree.o lookup3.o lruhash.o slabhash.o tcp_conn_limit.o timehist.o tube.o winsock_event.o autotrust.o val_anchor.o rpz.o rfc_1982.o proxy_protocol.o validator.o val_kcache.o val_kentry.o val_neg.o val_nsec3.o val_nsec.o val_secalgo.o val_sigcrypt.o val_utils.o dns64.o authzone.o respip.o timeval_func.o netevent.o listen_dnsport.o outside_network.o keyraw.o sbuffer.o wire2str.o parse.o parseutil.o rrdef.o str2wire.o strlcat.o strlcpy.o arc4random.o arc4random_uniform.o arc4_lock.o
+libtool: link: ranlib .libs/libunbound.a
+libtool: link: ( cd ".libs" && rm -f "libunbound.la" && ln -s "../libunbound.la" "libunbound.la" )
+./libtool --tag=CC --mode=link gcc  -R/root/local-eng25519/lib -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -L/root/local-eng25519/lib -o unbound acl_list.lo cachedump.lo daemon.lo shm_main.lo remote.lo stats.lo unbound.lo worker.lo  dns.lo infra.lo rrset.lo dname.lo msgencode.lo as112.lo msgparse.lo msgreply.lo packed_rrset.lo iterator.lo iter_delegpt.lo iter_donotq.lo iter_fwd.lo iter_hints.lo iter_priv.lo iter_resptype.lo iter_scrub.lo iter_utils.lo localzone.lo mesh.lo modstack.lo view.lo outbound_list.lo alloc.lo config_file.lo configlexer.lo configparser.lo fptr_wlist.lo siphash.lo edns.lo locks.lo log.lo mini_event.lo module.lo net_help.lo random.lo rbtree.lo regional.lo rtt.lo dnstree.lo lookup3.lo lruhash.lo slabhash.lo tcp_conn_limit.lo timehist.lo tube.lo winsock_event.lo autotrust.lo val_anchor.lo rpz.lo rfc_1982.lo proxy_protocol.lo validator.lo val_kcache.lo val_kentry.lo val_neg.lo val_nsec3.lo val_nsec.lo val_secalgo.lo val_sigcrypt.lo val_utils.lo dns64.lo  authzone.lo         respip.lo timeval_func.lo netevent.lo listen_dnsport.lo outside_network.lo ub_event.lo keyraw.lo sbuffer.lo wire2str.lo parse.lo parseutil.lo rrdef.lo str2wire.lo strlcat.lo strlcpy.lo arc4random.lo arc4random_uniform.lo arc4_lock.lo   -lssl -lpthread  -lcrypto 
+libtool: link: gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -o unbound .libs/acl_list.o .libs/cachedump.o .libs/daemon.o .libs/shm_main.o .libs/remote.o .libs/stats.o .libs/unbound.o .libs/worker.o .libs/dns.o .libs/infra.o .libs/rrset.o .libs/dname.o .libs/msgencode.o .libs/as112.o .libs/msgparse.o .libs/msgreply.o .libs/packed_rrset.o .libs/iterator.o .libs/iter_delegpt.o .libs/iter_donotq.o .libs/iter_fwd.o .libs/iter_hints.o .libs/iter_priv.o .libs/iter_resptype.o .libs/iter_scrub.o .libs/iter_utils.o .libs/localzone.o .libs/mesh.o .libs/modstack.o .libs/view.o .libs/outbound_list.o .libs/alloc.o .libs/config_file.o .libs/configlexer.o .libs/configparser.o .libs/fptr_wlist.o .libs/siphash.o .libs/edns.o .libs/locks.o .libs/log.o .libs/mini_event.o .libs/module.o .libs/net_help.o .libs/random.o .libs/rbtree.o .libs/regional.o .libs/rtt.o .libs/dnstree.o .libs/lookup3.o .libs/lruhash.o .libs/slabhash.o .libs/tcp_conn_limit.o .libs/timehist.o .libs/tube.o .libs/winsock_event.o .libs/autotrust.o .libs/val_anchor.o .libs/rpz.o .libs/rfc_1982.o .libs/proxy_protocol.o .libs/validator.o .libs/val_kcache.o .libs/val_kentry.o .libs/val_neg.o .libs/val_nsec3.o .libs/val_nsec.o .libs/val_secalgo.o .libs/val_sigcrypt.o .libs/val_utils.o .libs/dns64.o .libs/authzone.o .libs/respip.o .libs/timeval_func.o .libs/netevent.o .libs/listen_dnsport.o .libs/outside_network.o .libs/ub_event.o .libs/keyraw.o .libs/sbuffer.o .libs/wire2str.o .libs/parse.o .libs/parseutil.o .libs/rrdef.o .libs/str2wire.o .libs/strlcat.o .libs/strlcpy.o .libs/arc4random.o .libs/arc4random_uniform.o .libs/arc4_lock.o  -L/root/local-eng25519/lib -lssl -lpthread -lcrypto -pthread  -Wl,-rpath -Wl,/root/local-eng25519/lib
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o unbound-checkconf.lo -c smallapp/unbound-checkconf.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-checkconf.c  -fPIC -DPIC -o .libs/unbound-checkconf.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-checkconf.c -o unbound-checkconf.o >/dev/null 2>&1
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o worker_cb.lo -c smallapp/worker_cb.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/worker_cb.c  -fPIC -DPIC -o .libs/worker_cb.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/worker_cb.c -o worker_cb.o >/dev/null 2>&1
+./libtool --tag=CC --mode=link gcc  -R/root/local-eng25519/lib -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -L/root/local-eng25519/lib -o unbound-checkconf unbound-checkconf.lo worker_cb.lo dns.lo infra.lo rrset.lo dname.lo msgencode.lo as112.lo msgparse.lo msgreply.lo packed_rrset.lo iterator.lo iter_delegpt.lo iter_donotq.lo iter_fwd.lo iter_hints.lo iter_priv.lo iter_resptype.lo iter_scrub.lo iter_utils.lo localzone.lo mesh.lo modstack.lo view.lo outbound_list.lo alloc.lo config_file.lo configlexer.lo configparser.lo fptr_wlist.lo siphash.lo edns.lo locks.lo log.lo mini_event.lo module.lo net_help.lo random.lo rbtree.lo regional.lo rtt.lo dnstree.lo lookup3.lo lruhash.lo slabhash.lo tcp_conn_limit.lo timehist.lo tube.lo winsock_event.lo autotrust.lo val_anchor.lo rpz.lo rfc_1982.lo proxy_protocol.lo validator.lo val_kcache.lo val_kentry.lo val_neg.lo val_nsec3.lo val_nsec.lo val_secalgo.lo val_sigcrypt.lo val_utils.lo dns64.lo  authzone.lo         respip.lo timeval_func.lo netevent.lo listen_dnsport.lo outside_network.lo ub_event.lo keyraw.lo sbuffer.lo wire2str.lo parse.lo parseutil.lo rrdef.lo str2wire.lo strlcat.lo strlcpy.lo arc4random.lo arc4random_uniform.lo arc4_lock.lo   -lssl -lpthread  -lcrypto
+libtool: link: gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -o unbound-checkconf .libs/unbound-checkconf.o .libs/worker_cb.o .libs/dns.o .libs/infra.o .libs/rrset.o .libs/dname.o .libs/msgencode.o .libs/as112.o .libs/msgparse.o .libs/msgreply.o .libs/packed_rrset.o .libs/iterator.o .libs/iter_delegpt.o .libs/iter_donotq.o .libs/iter_fwd.o .libs/iter_hints.o .libs/iter_priv.o .libs/iter_resptype.o .libs/iter_scrub.o .libs/iter_utils.o .libs/localzone.o .libs/mesh.o .libs/modstack.o .libs/view.o .libs/outbound_list.o .libs/alloc.o .libs/config_file.o .libs/configlexer.o .libs/configparser.o .libs/fptr_wlist.o .libs/siphash.o .libs/edns.o .libs/locks.o .libs/log.o .libs/mini_event.o .libs/module.o .libs/net_help.o .libs/random.o .libs/rbtree.o .libs/regional.o .libs/rtt.o .libs/dnstree.o .libs/lookup3.o .libs/lruhash.o .libs/slabhash.o .libs/tcp_conn_limit.o .libs/timehist.o .libs/tube.o .libs/winsock_event.o .libs/autotrust.o .libs/val_anchor.o .libs/rpz.o .libs/rfc_1982.o .libs/proxy_protocol.o .libs/validator.o .libs/val_kcache.o .libs/val_kentry.o .libs/val_neg.o .libs/val_nsec3.o .libs/val_nsec.o .libs/val_secalgo.o .libs/val_sigcrypt.o .libs/val_utils.o .libs/dns64.o .libs/authzone.o .libs/respip.o .libs/timeval_func.o .libs/netevent.o .libs/listen_dnsport.o .libs/outside_network.o .libs/ub_event.o .libs/keyraw.o .libs/sbuffer.o .libs/wire2str.o .libs/parse.o .libs/parseutil.o .libs/rrdef.o .libs/str2wire.o .libs/strlcat.o .libs/strlcpy.o .libs/arc4random.o .libs/arc4random_uniform.o .libs/arc4_lock.o  -L/root/local-eng25519/lib -lssl -lpthread -lcrypto -pthread  -Wl,-rpath -Wl,/root/local-eng25519/lib
+sed -e 's/@''UNBOUND_VERSION_MAJOR@/1/' -e 's/@''UNBOUND_VERSION_MINOR@/19/' -e 's/@''UNBOUND_VERSION_MICRO@/4/' < ./libunbound/unbound.h > unbound.h
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o unbound-host.lo -c smallapp/unbound-host.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-host.c  -fPIC -DPIC -o .libs/unbound-host.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-host.c -o unbound-host.o >/dev/null 2>&1
+./libtool --tag=CC --mode=link gcc  -R/root/local-eng25519/lib -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -L/root/local-eng25519/lib -o unbound-host unbound-host.lo keyraw.lo sbuffer.lo wire2str.lo parse.lo parseutil.lo rrdef.lo str2wire.lo strlcat.lo strlcpy.lo   libunbound.la -lssl -lpthread  -lcrypto
+libtool: link: gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -o .libs/unbound-host .libs/unbound-host.o .libs/keyraw.o .libs/sbuffer.o .libs/wire2str.o .libs/parse.o .libs/parseutil.o .libs/rrdef.o .libs/str2wire.o .libs/strlcat.o .libs/strlcpy.o  -L/root/local-eng25519/lib ./.libs/libunbound.so -lssl -lpthread -lcrypto -pthread  -Wl,-rpath -Wl,/root/local-eng25519/lib
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o unbound-control.lo -c smallapp/unbound-control.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-control.c  -fPIC -DPIC -o .libs/unbound-control.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-control.c -o unbound-control.o >/dev/null 2>&1
+./libtool --tag=CC --mode=link gcc  -R/root/local-eng25519/lib -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -L/root/local-eng25519/lib -o unbound-control unbound-control.lo worker_cb.lo dns.lo infra.lo rrset.lo dname.lo msgencode.lo as112.lo msgparse.lo msgreply.lo packed_rrset.lo iterator.lo iter_delegpt.lo iter_donotq.lo iter_fwd.lo iter_hints.lo iter_priv.lo iter_resptype.lo iter_scrub.lo iter_utils.lo localzone.lo mesh.lo modstack.lo view.lo outbound_list.lo alloc.lo config_file.lo configlexer.lo configparser.lo fptr_wlist.lo siphash.lo edns.lo locks.lo log.lo mini_event.lo module.lo net_help.lo random.lo rbtree.lo regional.lo rtt.lo dnstree.lo lookup3.lo lruhash.lo slabhash.lo tcp_conn_limit.lo timehist.lo tube.lo winsock_event.lo autotrust.lo val_anchor.lo rpz.lo rfc_1982.lo proxy_protocol.lo validator.lo val_kcache.lo val_kentry.lo val_neg.lo val_nsec3.lo val_nsec.lo val_secalgo.lo val_sigcrypt.lo val_utils.lo dns64.lo  authzone.lo         respip.lo timeval_func.lo netevent.lo listen_dnsport.lo outside_network.lo ub_event.lo keyraw.lo sbuffer.lo wire2str.lo parse.lo parseutil.lo rrdef.lo str2wire.lo strlcat.lo strlcpy.lo arc4random.lo arc4random_uniform.lo arc4_lock.lo   -lssl -lpthread  -lcrypto
+libtool: link: gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -o unbound-control .libs/unbound-control.o .libs/worker_cb.o .libs/dns.o .libs/infra.o .libs/rrset.o .libs/dname.o .libs/msgencode.o .libs/as112.o .libs/msgparse.o .libs/msgreply.o .libs/packed_rrset.o .libs/iterator.o .libs/iter_delegpt.o .libs/iter_donotq.o .libs/iter_fwd.o .libs/iter_hints.o .libs/iter_priv.o .libs/iter_resptype.o .libs/iter_scrub.o .libs/iter_utils.o .libs/localzone.o .libs/mesh.o .libs/modstack.o .libs/view.o .libs/outbound_list.o .libs/alloc.o .libs/config_file.o .libs/configlexer.o .libs/configparser.o .libs/fptr_wlist.o .libs/siphash.o .libs/edns.o .libs/locks.o .libs/log.o .libs/mini_event.o .libs/module.o .libs/net_help.o .libs/random.o .libs/rbtree.o .libs/regional.o .libs/rtt.o .libs/dnstree.o .libs/lookup3.o .libs/lruhash.o .libs/slabhash.o .libs/tcp_conn_limit.o .libs/timehist.o .libs/tube.o .libs/winsock_event.o .libs/autotrust.o .libs/val_anchor.o .libs/rpz.o .libs/rfc_1982.o .libs/proxy_protocol.o .libs/validator.o .libs/val_kcache.o .libs/val_kentry.o .libs/val_neg.o .libs/val_nsec3.o .libs/val_nsec.o .libs/val_secalgo.o .libs/val_sigcrypt.o .libs/val_utils.o .libs/dns64.o .libs/authzone.o .libs/respip.o .libs/timeval_func.o .libs/netevent.o .libs/listen_dnsport.o .libs/outside_network.o .libs/ub_event.o .libs/keyraw.o .libs/sbuffer.o .libs/wire2str.o .libs/parse.o .libs/parseutil.o .libs/rrdef.o .libs/str2wire.o .libs/strlcat.o .libs/strlcpy.o .libs/arc4random.o .libs/arc4random_uniform.o .libs/arc4_lock.o  -L/root/local-eng25519/lib -lssl -lpthread -lcrypto -pthread  -Wl,-rpath -Wl,/root/local-eng25519/lib
+./libtool --tag=CC --mode=compile gcc -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread  -o unbound-anchor.lo -c smallapp/unbound-anchor.c
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-anchor.c  -fPIC -DPIC -o .libs/unbound-anchor.o
+libtool: compile:  gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -c smallapp/unbound-anchor.c -o unbound-anchor.o >/dev/null 2>&1
+./libtool --tag=CC --mode=link gcc  -R/root/local-eng25519/lib -I.  -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -L/root/local-eng25519/lib -o unbound-anchor unbound-anchor.lo parseutil.lo strlcat.lo strlcpy.lo arc4random.lo arc4random_uniform.lo arc4_lock.lo   libunbound.la -lexpat -lssl -lpthread  -lcrypto
+libtool: link: gcc -I. -I/root/local-eng25519/include -DSRCDIR=. -g -O2 -flto -pthread -o .libs/unbound-anchor .libs/unbound-anchor.o .libs/parseutil.o .libs/strlcat.o .libs/strlcpy.o .libs/arc4random.o .libs/arc4random_uniform.o .libs/arc4_lock.o  -L/root/local-eng25519/lib ./.libs/libunbound.so -lexpat -lssl -lpthread -lcrypto -pthread  -Wl,-rpath -Wl,/root/local-eng25519/lib
+cp smallapp/unbound-control-setup.sh unbound-control-setup
+chmod +x unbound-control-setup
